@@ -21,20 +21,22 @@ namespace RemainderOfDivision
 
             Console.WriteLine($"(при условии что a = {a} и b = {b}): {a}/{b} = {quotient} остаток {reminder}");
 
-        }
-
-        static int ParseInt(string message = "")
-        {
-            int number;
-
-            Console.WriteLine(message);
-            while (!int.TryParse(Console.ReadLine(), out number))
+            int ParseInt(string message = "")
             {
+                int number;
 
-                Console.WriteLine("Введенный вами символ не является числом. Попробуйте ещё раз: ");
+                Console.WriteLine(message);
+                while (!int.TryParse(Console.ReadLine(), out number))
+                {
+
+                    Console.WriteLine("Введенный вами символ не является числом. Попробуйте ещё раз: ");
+                }
+
+                return number;
             }
 
-            return number;
         }
+
+       
     }
 }
