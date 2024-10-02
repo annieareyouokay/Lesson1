@@ -25,8 +25,16 @@ namespace RemainderOfDivision
 
         static int ParseInt(string message = "")
         {
+            int number;
+
             Console.WriteLine(message);
-            return Convert.ToInt32(Console.ReadLine());
+            while (!int.TryParse(Console.ReadLine(), out number))
+            {
+
+                Console.WriteLine("Введенный вами символ не является числом. Попробуйте ещё раз: ");
+            }
+
+            return number;
         }
     }
 }

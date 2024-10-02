@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             int[] numbers = GenerateNumbers();
-            PrintNumbers(ref numbers, "Original array: ");
             Reverse(ref numbers);
             PrintNumbers(ref numbers, "Reversed array: ");
 
@@ -21,28 +20,30 @@
                 return newArray;
             }
 
-            void Reverse(ref int[] numbers)
+            void Reverse(ref int[] arrayForReverse)
             {
                 int tmp, mid, count;
 
-                mid = numbers.Length / 2;
-                count = numbers.Length;
+                mid = arrayForReverse.Length / 2;
+                count = arrayForReverse.Length;
                 for (int i = 0; i < mid; i++)
                 {
-                    tmp = numbers[i];
-                    numbers[i] = numbers[^(i+1)];
-                    numbers[^(i + 1)] = tmp;
+                    tmp = arrayForReverse[i];
+                    arrayForReverse[i] = arrayForReverse[^(i+1)];
+                    arrayForReverse[^(i + 1)] = tmp;
                 }
             }
 
-            void PrintNumbers(ref readonly int[] numbers, string message = "")
+            void PrintNumbers(ref readonly int[] numbersArray, string message)
             {
                 Console.Write(message);
-                foreach (var item in numbers)
+                bool firstIteration = true;
+                foreach (var item in numbersArray)
                 {
-                    
-                    Console.Write(item + (numbers.Last<int>() == item ? "\n" : ", "));
+                    Console.Write((firstIteration ? "" : ", ") + item.ToString());
+                    firstIteration = false;
                 }
+                Console.Write("\n");
             }
         }
     }
