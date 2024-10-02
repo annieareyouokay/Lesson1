@@ -6,30 +6,31 @@
         {
             int[] array = { 23, 456, 657, 2, 456, 322, 87, 32, 55 };
             Console.WriteLine("Min is: " + MinValue(array));
-            Console.WriteLine("Average is: " + AveragValue(array));
-        }
-        static int MinValue(int[] array)
-        {
-            int min = array[0];
-            foreach (var num in array)
+            Console.WriteLine("Average is: " + AverageValue(array));
+
+            int MinValue(int[] array)
             {
-                if (num < min)
+                int min = array[0];
+                foreach (var num in array)
                 {
-                    min = num;
+                    if (num < min)
+                    {
+                        min = num;
+                    }
                 }
+                return min;
             }
-            return min;
-        }
 
-        static int AveragValue(int[] array)
-        {
-            int sum = 0;
-            foreach (var num in array)
+            int AverageValue(int[] array)
             {
-                sum += num;
-            }
+                int sum = 0;
+                foreach (var num in array)
+                {
+                    sum += num;
+                }
 
-            return sum / array.Length;
+                return sum / array.Length;
+            }
         }
     }
 }
