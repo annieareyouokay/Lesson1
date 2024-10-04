@@ -1,4 +1,6 @@
-﻿namespace ReverseArray
+﻿using Utilities;
+
+namespace ReverseArray
 {
     internal class Program
     {
@@ -37,13 +39,7 @@
             void PrintNumbers(ref readonly int[] numbersArray, string message)
             {
                 Console.Write(message);
-                bool firstIteration = true;
-                foreach (var item in numbersArray)
-                {
-                    Console.Write((firstIteration ? "" : ", ") + item.ToString());
-                    firstIteration = false;
-                }
-                Console.Write("\n");
+                Auxiliary.PrintArray(in numbersArray);
             }
         }
     }

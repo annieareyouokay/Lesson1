@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+﻿using Utilities;
 
 namespace RemainderOfDivision
 {
@@ -23,20 +23,9 @@ namespace RemainderOfDivision
 
             int ParseInt(string message = "")
             {
-                int number;
-
                 Console.WriteLine(message);
-                while (!int.TryParse(Console.ReadLine(), out number))
-                {
-
-                    Console.WriteLine("Введенный вами символ не является числом. Попробуйте ещё раз: ");
-                }
-
-                return number;
+                return Auxiliary.GetNumber();
             }
-
         }
-
-       
     }
 }

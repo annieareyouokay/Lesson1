@@ -1,4 +1,6 @@
-﻿namespace MonthDays
+﻿using Utilities;
+
+namespace MonthDays
 {
     internal class Program
     {
@@ -19,20 +21,15 @@
         }
         static void Main(string[] args)
         {
-            int GetNumber()
+            Console.WriteLine("Введите число от 1 до 12: ");
+            var number = Auxiliary.GetNumber();
+            if (number > 12 || number < 1)
             {
-                int number;
-                Console.WriteLine("Введите число от 1 до 12: ");
-                while (!int.TryParse(Console.ReadLine(), out number) || (number > 12 || number < 1))
-                {
-                    
-                    Console.WriteLine("Введенный вами символ не является числом или находится вне диапазона 1 - 12. Попробуйте ещё раз: ");
-                }
-
-                return number;
+                Console.WriteLine("Число находится вне диапазона 1 - 12.");
+                return;
             }
 
-            Console.WriteLine((Month)GetNumber());
+            Console.WriteLine((Month)number);
         }
     }
 
