@@ -4,21 +4,7 @@ namespace MonthDays
 {
     internal class Program
     {
-        enum Month
-        {
-            Январь = 1,
-            Февраль,
-            Март,
-            Апрель,
-            Май,
-            Июнь,
-            Июль,
-            Август,
-            Сентябрь,
-            Октябрь,
-            Ноябрь,
-            Декабрь
-        }
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число от 1 до 12: ");
@@ -29,7 +15,7 @@ namespace MonthDays
                 return;
             }
 
-            Console.WriteLine((Month)number);
+            Console.WriteLine((Auxiliary.Month)number);
         }
     }
 

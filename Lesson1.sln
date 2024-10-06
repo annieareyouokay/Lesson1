@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonthDays", "MonthDays\Mont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArray", "ReverseArray\ReverseArray.csproj", "{C2DC61AA-D950-48FC-91DD-636B8A60505A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoCars", "TwoCars\TwoCars.csproj", "{33A1CB91-9A26-4280-ADC3-3B86E8B06E7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoCars", "TwoCars\TwoCars.csproj", "{33A1CB91-9A26-4280-ADC3-3B86E8B06E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{BDC66C60-36A7-455F-80E4-6DEEDD638879}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{BDC66C60-36A7-455F-80E4-6DEEDD638879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salary", "Salary\Salary.csproj", "{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{BDC66C60-36A7-455F-80E4-6DEEDD638879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC66C60-36A7-455F-80E4-6DEEDD638879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC66C60-36A7-455F-80E4-6DEEDD638879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
