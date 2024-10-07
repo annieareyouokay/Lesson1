@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoCars", "TwoCars\TwoCars.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{BDC66C60-36A7-455F-80E4-6DEEDD638879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salary", "Salary\Salary.csproj", "{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Salary", "Salary\Salary.csproj", "{76EE9659-89AE-4C47-8CA1-FF783CD80D7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysInMonth", "DaysInMonth\DaysInMonth.csproj", "{1AA291A9-8D63-4308-BD3A-A38C33F80DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaysInMonth", "DaysInMonth\DaysInMonth.csproj", "{1AA291A9-8D63-4308-BD3A-A38C33F80DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{B1647DF5-3D05-4DD0-82E3-B4DF1F970C69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{1AA291A9-8D63-4308-BD3A-A38C33F80DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA291A9-8D63-4308-BD3A-A38C33F80DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA291A9-8D63-4308-BD3A-A38C33F80DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1647DF5-3D05-4DD0-82E3-B4DF1F970C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1647DF5-3D05-4DD0-82E3-B4DF1F970C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1647DF5-3D05-4DD0-82E3-B4DF1F970C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1647DF5-3D05-4DD0-82E3-B4DF1F970C69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
