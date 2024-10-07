@@ -14,9 +14,9 @@ namespace CopyingArray
                 array2[i] = array1[i];
             }
             Console.Write("Array1: ");
-            Auxiliary.PrintArray(ref array1);
+            Auxiliary.PrintArray(array1);
             Console.Write("Array2: ");
-            Auxiliary.PrintArray(ref array2);
+            Auxiliary.PrintArray(array2);
         }
     }
 }

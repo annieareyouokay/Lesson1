@@ -39,7 +39,7 @@ namespace ReverseArray
             void PrintNumbers(ref readonly int[] numbersArray, string message)
             {
                 Console.Write(message);
-                Auxiliary.PrintArray(in numbersArray);
+                Auxiliary.PrintArray(numbersArray);
             }
         }
     }

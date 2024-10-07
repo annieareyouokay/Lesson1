@@ -35,7 +35,7 @@ namespace Utilities
             return number;
         }
 
-        public static void PrintArray(ref readonly int[] numbersArray)
+        public static void PrintArray(int[] numbersArray)
         {
             bool firstIteration = true;
             foreach (var item in numbersArray)
