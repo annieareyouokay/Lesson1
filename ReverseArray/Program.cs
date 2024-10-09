@@ -7,8 +7,8 @@ namespace ReverseArray
         static void Main(string[] args)
         {
             int[] numbers = GenerateNumbers();
-            Reverse(ref numbers);
-            PrintNumbers(ref numbers, "Reversed array: ");
+            Reverse(numbers);
+            PrintNumbers(numbers, "Reversed array: ");
 
             int[] GenerateNumbers(int size = 10)
             {
@@ -22,7 +22,7 @@ namespace ReverseArray
                 return newArray;
             }
 
-            void Reverse(ref int[] arrayForReverse)
+            void Reverse(int[] arrayForReverse)
             {
                 int tmp, mid, count;
 
@@ -36,7 +36,7 @@ namespace ReverseArray
                 }
             }
 
-            void PrintNumbers(ref readonly int[] numbersArray, string message)
+            void PrintNumbers(int[] numbersArray, string message)
             {
                 Console.Write(message);
                 Auxiliary.PrintArray(numbersArray);
