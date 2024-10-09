@@ -6,10 +6,10 @@ namespace CopyingArray
     {
         static void Main(string[] args)
         {
-            int[] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var array1 = new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var array2 = new int[10];
 
-            for (int i = 0; i < array1.Length; i++)
+            for (var i = 0; i < array1.Length; i++)
             {
                 array2[i] = array1[i];
             }

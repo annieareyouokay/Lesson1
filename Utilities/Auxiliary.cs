@@ -37,20 +37,14 @@ namespace Utilities
 
         public static void PrintArray(int[] numbersArray)
         {
-            bool firstIteration = true;
-            foreach (var item in numbersArray)
-            {
-                Console.Write((firstIteration ? "" : ", ") + item.ToString());
-                firstIteration = false;
-            }
-            Console.Write("\n");
+            Console.WriteLine(string.Join(", ", numbersArray));;
         }
 
         public static int[] GenerateNumbersArray(int size, int min, int max)
         {
-            int[] newArray = new int[size];
+            var newArray = new int[size];
             var random = new Random();
-            for (int i = 0; i < size; i++)
+            for (var i = 0; i < size; i++)
             {
                 newArray[i] = random.Next(min, max);
             }

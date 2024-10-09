@@ -56,8 +56,12 @@ namespace TicTacToe
 
                 if (isGameOver)
                 {
-                    Console.WriteLine("Начать новую игру? Для этого введите \"Yes(Y)\" - да начать, \"No(N)\" - нет закончить");
+                    Console.WriteLine("Начать новую игру? Для этого введите \"Yes(Y)\"(По умолчанию) - да начать, \"No(N)\" - нет закончить");               
                     var input = Console.ReadLine();
+                    if (string.IsNullOrEmpty(input))
+                    {
+                        input = "y";
+                    }
                     if (input.ToLower() == "yes" || input.ToLower() == "y")
                     {
                         NewGame();
@@ -114,7 +118,7 @@ namespace TicTacToe
 
         private bool IsWin()
         {
-            for (int i = 0; i < _rowCount; i++)
+            for (var i = 0; i < _rowCount; i++)
             {
                 if (gameBoard[i, 0] == currentTurn && gameBoard[i, 0] == gameBoard[i, 1] && gameBoard[i, 0] == gameBoard[i, 2])
                 {
@@ -140,16 +144,7 @@ namespace TicTacToe
             return false;
         }
 
-        private bool IsDraw()
-        {
-            if (freeCells <= 0)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
+        private bool IsDraw() => freeCells <= 0;
         public static string GetDescription() => description;
 
         private int GetTurn(int limit)

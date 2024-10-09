@@ -6,7 +6,7 @@ namespace ReverseArray
     {
         static void Main(string[] args)
         {
-            int[] numbers = GenerateNumbers();
+            var numbers = GenerateNumbers();
             Reverse(numbers);
             PrintNumbers(numbers, "Reversed array: ");
 
@@ -14,7 +14,7 @@ namespace ReverseArray
             {
                 int[] newArray = new int[size];
                 var random = new Random();
-                for (int i = 0; i < size; i++)
+                for (var i = 0; i < size; i++)
                 {
                     newArray[i] = random.Next(1 ,100);
                 }
@@ -24,11 +24,11 @@ namespace ReverseArray
 
             void Reverse(int[] arrayForReverse)
             {
-                int tmp, mid, count;
+                int tmp, mid;
 
                 mid = arrayForReverse.Length / 2;
-                count = arrayForReverse.Length;
-                for (int i = 0; i < mid; i++)
+
+                for (var i = 0; i < mid; i++)
                 {
                     tmp = arrayForReverse[i];
                     arrayForReverse[i] = arrayForReverse[^(i+1)];
