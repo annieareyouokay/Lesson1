@@ -169,7 +169,7 @@ namespace TicTacToe
                 {
                     if (input.StartsWith("-"))
                     {
-                        ProcessCommand(input);
+                        ProcessCommand(input.ToLower());
                         continue;
                     }
 
